@@ -1,0 +1,782 @@
+@import "../1-base/base.scss";
+
+.banner{ color: $white;
+    padding-bottom: 50px;
+position: relative;
+.banner-heading{width: 60%;
+    h3{font-size: 24px;
+       color: $secondary;
+       font-family: $primaryfont;
+       margin: 0px 0px 10px 0px;
+    }
+    h1{
+        font-size: 76px;
+        color: $white;
+        font-family: $primaryfont;
+        margin: 0px 0px 10px 0px;
+        text-transform: capitalize;
+        span{
+            display: block;
+        }
+    }
+    p{
+        font-size: 24px;
+        font-family: $secondaryfont;
+        margin: 10px 0px 0px 0px;
+        line-height: 36px;
+    }
+    a{@include flex;
+     justify-content: flex-start;
+     font-size: 18px;
+     font-family: $primaryfont;
+     color: $white;
+     font-weight: 600;
+     margin-top: 30px;
+        span{
+            width: 60px;
+            height: 60px;
+            background-color: $secondary;
+            border-radius: 50%;
+            @include flex;
+            position: relative;
+            margin-right: 15px;
+            svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $white;
+                font-size: 26px;
+            }
+        }
+    }
+}
+.banner-img{
+    width: 40%;
+    margin-top: 44px;
+}
+
+&::after{
+    content: "";
+width: 100%;
+height: 105px;
+background: #000642;
+position: absolute;
+border-radius: 50%;
+top: 93%;
+z-index: 9;
+}
+
+}
+
+.virtual_wrapper{
+height: 652px;
+background: $primaryAlt;
+text-align: center;
+position: relative;
+padding-top: 65px;
+    .virtual-video{padding-top: 60px;
+        position: relative;
+        img{
+            border-radius: 30px;
+            margin-top: 60px;
+        }
+        video{
+            border-radius: 30px;
+            height: 535px;
+        }
+
+        .video-overlay{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .text{
+                h3{
+                    color: $white;
+                    font-size: 56px;
+                    font-family: $primaryfont;
+                    margin: 0;
+                }
+                .play{
+                    width: 100px;
+                    height: 100px;
+                    background: $secondary;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin: 10px auto;
+                    cursor: pointer;
+                    svg{
+                        font-size: 65px;
+                        color:$white;
+                    }
+                    &::after{
+                        content: "";
+                        border: 1px solid $secondary;
+                        width: 120px;
+                        height: 120px;
+                        position: absolute;
+                        left: 50%;
+                        top: -1px;
+                        border-radius: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                p{
+                    color: $white;
+                    font-size: 18px;
+                    font-family: $secondaryfont;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+.game-impect{
+background-color: #020530;
+.row{
+    padding : 445px 0px 120px;
+    .sub_heading{
+        width: 50%;
+        padding: 0;
+    }
+    .number-box{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px 15px;
+
+        .box{
+            width: 100%;
+            height: 245px;
+            @include flex; justify-content: center; flex-direction: column;
+            text-align: center;
+            color: $white;
+            border-radius: 45px 0px 45px 0px;
+            h4{
+                font-family: $primaryfont;
+                font-size: 76px;
+
+                span{
+                    font-family: $secondaryfont;
+                }
+            }
+            p{  
+                font-family: $secondaryfont;
+                font-size: 18px;
+                font-weight: 400;
+                margin-top: 6px;
+            }
+        }
+        .box1{background-color: #2a40a3;}
+        .box2{background-color: #a5283a;
+              margin-top: -60px;
+        }
+        .box3{background-color: #1d602d;}
+        .box4{background-color: #7e4c05;
+            margin-top: -60px;
+        }
+    }
+}
+}
+
+.our-team{padding-bottom: 0px; 
+    margin-bottom: 510px;
+    height: 682px;
+    background-color: $primaryAlt;
+    position: relative;
+    &:after{
+        content: "";
+        width: 100%;
+        height: 95px;
+        background: #000642;
+        position: absolute;
+        border-radius: 50%;
+        top: 93%;
+        z-index: 0;
+    }
+.sub_heading{
+    text-align: center;
+    padding-top: 115px;
+
+    p{margin-top: 15px;}
+}
+.owl_wrapper{
+    margin-top: 45px;
+    .owl-carousel{
+        .owl-stage-outer{padding: 15px 0px;}
+        .profile{
+            background-color: #2c1860;
+            height: 488px;
+            border-radius: 30px;
+            padding: 10px;
+            position: relative;
+            z-index: 99999;
+            margin: 0px;
+            box-shadow: 9px 9px 13px 0px #090c379e;
+
+            .profile-info{text-align: center;
+                h3{color: $white;
+                   font-family: $primaryfont;
+                   font-size: 23px;
+                   margin-bottom: 10px;
+                }
+                p{
+                    font-size: 18px;
+                    color: $secondary;
+                    font-family: $secondaryfont;
+                    line-height: 32px;
+                    margin-top: 10px;
+                }
+            }
+
+            .social-icon{width: 80%;
+                margin: 0 auto;
+                @include flex; justify-content: space-between;
+                li{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #9b94b6;
+                    border-radius: 50%;
+                    position: relative;
+
+                    a{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
+                        svg{
+                            font-size: 20px;
+                            color: #9b94b6;
+                        }
+                    }
+
+                }
+            }
+        }
+        .owl-nav{
+            display: block;
+
+            button{
+                color: $white;
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                transform: translate(-50%, 55px);   
+                width: 45px;
+                height: 45px;
+                background-color: $primaryAlt;
+                border-radius: 50%;   
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%); 
+                    background-color: transparent;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    border: 1px solid $primaryAlt;
+                }
+                span{
+                    font-size: 28px;  
+                    margin-top: -7px;
+                    display: inline-block;
+                }
+            }
+
+            .owl-prev{
+                left: 43%;
+            }
+            .owl-next{
+                left: 57%;
+            }
+        }
+
+        .owl-dots{
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 62px);
+            .owl-dot{
+                width: 8px;
+                height: 8px;
+                background: #fff;
+                margin: 0px 6px;
+                border-radius: 50%;
+            }
+            .active{
+                background-color: $secondary;
+            }
+        }
+
+    }
+  }
+}
+
+.last-slider{padding-bottom: 240px;
+    .swiper-container{position: relative;
+                        padding-bottom: 130px;
+        .swiper-pagination {
+    
+            .swiper-pagination-bullet{
+                width: 8px;
+                height: 8px;
+                background: #fff;
+                margin: 0px 6px;
+                border-radius: 50%;
+                border: 0px;
+            }
+            .swiper-pagination-bullets{
+                position: absolute;
+                bottom: 14px !important;
+            }
+            .swiper-pagination-bullet-active{
+                background-color: $secondary;
+            }
+        }
+
+        .swiper-button-prev, .swiper-button-next{
+            left: 45%;
+            right: auto;
+            top: 100%;
+            transform: translate(-50%, -80%);
+        }
+
+        .swiper-button-next{
+            left: 55%;
+        }
+    }
+}
+
+@include down($xs){
+    .virtual-video{
+        video{
+            height: 390px !important;
+        }
+    }
+    .owl-carousel {
+        .owl-item {
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+
+    .game-impect{
+        .row{
+            .number-box{
+                .box {
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-link{
+        .logo{
+            img{
+                width: 80%;
+            }
+        }
+
+        ul{
+            li{
+                a{font-size: 14px !important;}
+            }
+        }
+    }
+}
+
+
+@include down($sm){
+
+    .banner{
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            .row{
+                flex-direction: column;
+                .banner-heading{
+                    padding-top: 20px;
+                    text-align: center;
+                    width:100%;
+                    h3{
+                        font-size:18px;
+                    }
+                    h1{
+                        font-size: 26px;
+                        span{
+                            display: inline-block;
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                    a{
+                        font-size: 14px;
+                        margin-top:20px;
+                        justify-content: center;
+                        span{
+                            width:40px;
+                            height:40px;
+                            svg{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .banner-img{
+                    width: 60%;
+                    margin-top: 10px;
+                    padding-top: 20px;
+                    img{
+                        width:100%;
+                        height:auto;
+                    }
+                }
+            }  
+        }
+        &:after{
+            height: 70px;
+        }
+    }
+    .virtual_wrapper{
+        height: auto;
+        padding-bottom:50px;
+        .virtual-video{padding-top: 0px;
+            margin-top: -60px;
+            .video-overlay{
+                .text{
+                    .play{
+                        width: 40px;
+                        height:40px;
+                        svg{
+                            font-size: 16px;
+                        }
+                        &::after{
+                            width:50px;
+                            height:50px;
+                            top:4px;
+                        }
+                    }
+                    h3{
+                        display: none;
+                    }
+                    p{
+                        display: none;
+                    }
+                }     
+            }       
+        }
+    }
+
+    .game-impect{
+        .row{
+            flex-direction: column;
+            padding: 35px 0px 30px;
+            .sub_heading{
+                width:100%;
+            }
+            .number-box{
+                width:100%;
+                margin-top: 50px;
+                .box{
+                    width:100%;
+                    height:165px;
+                    h4{
+                        font-size:40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .our-team{
+        margin-bottom: 100px;
+        height: auto;
+        .sub_heading{
+            padding-top: 35px;
+            
+            h2{
+                br{display: none;}
+            }
+        }
+        .owl_wrapper{
+            .owl-carousel{
+                .profile{
+                    height:auto;
+                    padding-bottom:20px;
+                }
+                .owl-nav{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    .owl-prev{
+                        left: 0;
+                        position: relative;
+                    }
+                    .owl-next{
+                        left: 25px;
+                        position: relative;
+                    }
+                }
+                .owl-dots{
+                    display: none;
+                }
+            }
+        }
+
+        &::after{
+            height: 126px;
+            top:96%;
+        }
+    }
+
+    .last-slider{
+        padding: 25px;
+        padding-bottom: 150px;
+        .swiper-container {
+            .swiper-button-prev{
+                left: 35%;
+            }
+            .swiper-button-next{
+                left: 60%;
+            }
+        }
+        .swiper-pagination-bullets{
+            display: none;
+        }
+    }
+}
+
+@include between($sm, $md){
+    .banner{
+        .banner-heading{
+            padding-top: 50px; 
+            h3{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 35px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        &::after{
+            height: 65px;
+        }
+
+    }
+    
+    .virtual_wrapper{
+        .virtual-video{
+            .video-overlay{
+                .text{
+                    .play{
+                        width:70px;
+                        height:70px;
+                        svg{
+                            font-size: 30px;
+                        }
+                        &::after{
+                            width:80px;
+                            height:80px;
+                            top:4px;
+                        }
+                    }
+                    h3{
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+    .game-impect{
+        .row{
+            padding: 125px 0px 80px;
+            .number-box{
+                .box{
+                    width: 100%;
+                    height: 165px;
+                    h4{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .our-team{
+        margin-bottom: 200px;
+        height: auto;
+        .sub_heading{
+            padding-top: 65px;
+        }
+        .owl_wrapper{
+            margin-top: 15px;
+            .owl-carousel{
+                .owl-item{
+                    img{
+                        height: 280px;
+                        object-fit: cover;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .last-slider{
+        .swiper-container{
+            padding-bottom: 110px;
+            .swiper-pagination{
+                display: none;
+            }
+        }
+    }
+
+
+}
+
+
+
+@include between($md, $xl){
+    .banner{
+        .banner-heading{
+            h1{
+                font-size: 46px;
+            }
+        }
+        &::after{
+            height:75px;
+        }
+        .banner-img{
+            img{
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+
+    .virtual_wrapper{
+        height:auto;
+        padding-bottom:50px;
+    }
+
+    .game-impect{
+        .row{
+            padding: 155px 0px 120px;
+            .number-box{
+                .box{
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    .our-team{
+        height:500px;
+        .owl_wrapper{
+            .owl-carousel{
+                .owl-nav{
+                    .owl-prev{
+                        left: 40%;
+                    }
+                    .owl-next{
+                        left:60%;
+                    }
+                }
+                .owl-item {
+                    img{
+                        height:auto;
+                    }
+                }
+                .profile{
+                    min-height:380px;
+                    height:auto;
+                    .profile-info{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                    .social-icon{
+                        li{
+                            width:30px;
+                            height:30px;
+                            a{
+                                svg{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+    .last-slider{
+        .swiper-container{
+            .swiper-button-prev{
+                left: 40%;
+            }
+            .swiper-button-next{
+                left: 60%;
+            }
+        }
+    }
+
+}
+
+@include between($xl, $xxl){
+    .banner{
+        .banner-heading{
+            h1{
+                font-size: 50px;
+            }
+        }
+        .banner-img{
+            img{
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+    .game-impect{
+        .row{
+            .sub_heading{
+                padding-right:20px;
+            }
+        }        
+    }
+}
+
+
+@include up($xxl){
+    .banner{
+        .banner-img{
+            img{
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,21 @@
+@mixin flex {
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+@mixin down($bp){
+    @media(max-width: (($bp)+'px')){
+        @content; 
+    }
+}
+
+@mixin up($bp){
+    @media(min-width: (($bp + 1)+'px')){
+        @content;
+    }
+}
+
+@mixin between($bp1, $bp2){
+    @media(min-width: (($bp1 + 1)+ 'px')) and (max-width: (($bp2 - 0.02) + 'px')){
+        @content;
+    }
+}

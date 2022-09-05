@@ -1,0 +1,172 @@
+@import "../3-mixins/variables";
+@import "../3-mixins/mixins";
+@import "../4-modules/header";
+@import "../4-modules/footer";
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,700;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $primary;
+}
+ 
+ul{  
+    margin:0;
+    padding:0;
+} 
+
+li{   
+    list-style: none;
+}  
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1300px;  
+    width: 100%;  
+    margin: 0 auto;         
+}
+
+.row{
+    @include flex;           
+}
+.sub_heading{
+    padding-top: 65px;
+    h3{font-size: 24px; 
+       font-family: $primaryfont;
+       color: $secondary;
+       margin: 0px 0px 10px 0px;
+    }
+    h2{
+        font-size: 58px;
+        font-family: $primaryfont;
+        color: $white;
+        margin: 0;
+    }
+
+    p{
+        font-size: 18px;
+        font-family: $secondaryfont;
+        color: $white;
+        line-height: 32px;
+        margin-top: 10px;
+    }
+}
+
+.scrollTop {
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    background-color: $secondary;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        font-size: 18px;
+        color: $white;
+    }
+}
+
+@include down($xs){
+    .sub_heading{
+        h2{
+            font-size: 22px !important;
+        }
+
+        p{
+            font-size: 14px !important;
+            br{
+                display: none;
+            }
+        }
+    }
+}
+
+ 
+
+@include down($sm){
+    .container{
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .sub_heading {padding-top:20px;
+        h3 {
+            font-size: 18px;
+        }
+        h2{
+            font-size: 26px;
+        }
+        p{
+            font-size:16px;
+        }
+    }
+
+    .owl-dots{
+        display: none;
+    }
+}
+
+@include between($sm, $md){
+    .container{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .sub_heading {padding-top:20px;
+        h3 {
+            font-size: 20px;
+        }
+        h2{
+            font-size: 32px;
+        }
+        p{
+            font-size:18px;
+        }
+    }
+    .owl-dots{
+        display: none;
+    }
+}
+
+@include between($md, $xl){
+    .container{
+        max-width: 90%;
+        margin: auto;
+    }
+    .sub_heading {padding-top:20px;
+        h3 {
+            font-size: 24px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size:18px;
+        }
+    }
+}
+
+@include between($xl, $xxl){
+    .container{
+        max-width: 90%;
+        margin: auto;
+    }
+    .sub_heading {padding-top:20px;
+        h2{
+            font-size: 40px;
+        }
+    }
+}
+
+
+
+  

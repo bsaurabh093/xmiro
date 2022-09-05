@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Xmiro</title>
+    <link href="css/1-base/all.min.css" rel="stylesheet">
+    <link href="css/1-base/base.css" rel="stylesheet">
+    <link href="css/2-layouts/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/1-base/owl.carousel.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/1-base/swiper.css">    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <img src="img/logo.png" alt="TLogo">
+                </div>
+
+                <ul class="menu-bar">
+                    <li><a class="active" href="#">home</a></li>
+                    <li class="dropdown"><a href="#">games 
+                        <i class="fa-solid fa-caret-down drop_icon" id="submenu" onclick="sub()"></i>
+                    </a> 
+                        <ul class="drop-list" id="drop-list">
+                            <li><a href="">games-One</a></li>
+                            <li><a href="">games-Two</a></li>
+                            <li><a href="">games-Three</a></li>
+                            <li><a href="">games-Four</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">team</a></li>
+                    <li><a href="#">jobs</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+
+                <div class="responsive-menu" onclick="cross(this)">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                  </div>
+            </div>
+        </div>
+    </header>   
+
+    <section class="banner">
+       <div class="container">
+        <div class="row">
+            <div class="banner-heading">
+                <h3 class="small_heading">Welcome To xmiro game solution</h3>
+                <h1>A new Level of <span>infinite possibilities</span></h1>
+                <p>We entertain billions of users with our games.Our mission to entertain the world goes beyond gaming. </p>
+                <a href="#"><span><i class="fa-solid fa-angle-right"></i></span>EXPLORE</a>
+            </div>
+
+            <picture class="banner-img">
+                <source loading="lazy" srcset="img/banner-img.webp" type="image/webp" width="674" height="700">
+                <source loading="lazy" srcset="img/banner-img.png" type="image/png" width="674" height="700">
+                <img loading="lazy" src="img/banner-img.png" alt="banner-img" width="674" height="700">
+            </picture>
+        </div> 
+       </div>
+    </section>
+
+    <section class="virtual_wrapper">
+        <div class="container">
+            <div class="sub_heading">
+                <h3>Imagination, Innovation, Incarnation</h3>
+                <h2>Our Mission Is To Create Virtual Worlds <br/> More Meaningful Than Real Life</h2>
+                <p>Our mission to entertain the world goes beyond gaming. Our teams create innovative <br/> and entertaining apps for everyday life.</p>
+            </div>
+
+            <div class="virtual-video">
+                <video width="1297" height="535" poster="img/video-img.webp" class="video" controls>
+                    <source src="./video/video_new.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-overlay">
+                   <div class="text">
+                    <div class="play play_btn"><i class="fa-solid fa-play"></i></div>                
+                        <h3>Meet Xmiro</h3>
+                        <p>Building games for a lifetime</p>
+                   </div>
+                </div>
+            </div>
+    </section>
+
+    
+
+    <section class="game-impect">
+        <div class="container">
+          <div class="row">  
+            <div class="sub_heading">
+                <h3>Xmiro In Number</h3>
+                <h2>A Young & Impactful Game Studio</h2>
+                <p>We have a passion for games!. Our teams create innovation and entertaining apps for everyday life.</p>
+            </div>
+            <ul class="number-box">
+                <li class="box box1">
+                    <h4><span class="number">3</span>+</43>
+                    <p>Games launched</p>
+                </li>
+                <li class="box box2">
+                    <h4> <span  class="number">0</span>B+</43>
+                    <p>Downloads</p>
+                </li> 
+                <li class="box box3">
+                    <h4> <span  class="number">21</span>M</43>
+                    <p>Monthly active users</p>
+                </li>
+                <li class="box box4">
+                    <h4> <span  class="number">0</span>+</43>
+                    <p>languages</p>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <section class="our-team">
+        <div class="container">
+            <div class="sub_heading">
+                <h3>We Have A Passion For Games!</h3>
+                <h2>Great game made by <br/> passionate people</h2>
+                <p>Our founding team are veteran individul contributors who have a <br/> passion for world-building.</p>
+            </div>
+
+            <div class="owl_wrapper">
+                <div class="owl-carousel owl-theme">
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Wilma Reid</h3>
+                            <p>Illustration Concept Artist <br/> Designer</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>David Byrd</h3>
+                            <p>Gameplay Engineer <br/> Systems Design</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Wilma Reid</h3>
+                            <p>Illustration Concept Artist <br/> Designer</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>David Byrd</h3>
+                            <p>Gameplay Engineer <br/> Systems Design</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>David Byrd</h3>
+                            <p>Gameplay Engineer <br/> Systems Design</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>David Byrd</h3>
+                            <p>Gameplay Engineer <br/> Systems Design</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>David Byrd</h3>
+                            <p>Gameplay Engineer <br/> Systems Design</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>David Byrd</h3>
+                            <p>Gameplay Engineer <br/> Systems Design</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>David Byrd</h3>
+                            <p>Gameplay Engineer <br/> Systems Design</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-one.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-one.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-one.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>David Byrd</h3>
+                            <p>Gameplay Engineer <br/> Systems Design</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item profile">
+                        <picture class="card-img">
+                            <source loading="lazy" srcset="img/card-two.webp" type="image/webp" width="286" height="281">
+                            <source loading="lazy" srcset="img/card-two.png" type="image/png" width="286" height="281">
+                            <img loading="lazy" src="img/card-two.png" alt="banner-img" width="286" height="281">
+                        </picture>
+    
+                        <div class="profile-info">
+                            <h3>Vincent Paul</h3>
+                            <p>Level Design Environment <br/> Art</p>
+                        </div>
+    
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="last-slider">
+        <div class="swiper-container two">
+            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="img/gallery-img-01.png" alt="slide 1" width="1077">
+                        </div>
+                    </div>
+                                <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="img/gallery-img-02.png" alt="slide 2" width="630">
+                        </div>
+                    </div>
+                                <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="img/gallery-img-03.png" alt="slide 3" width="630">
+                        </div>
+                    </div>
+                                <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="img/gallery-img-01.png" alt="slide 4" width="630">
+                        </div>
+                    </div>
+                                <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="img/gallery-img-02.png" alt="slide 5" width="630">
+                        </div>
+                    </div>
+                            <!-- Add Pagination -->
+            </div>
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="search-box">
+                <h4>To Get Update New Games!</h4>
+                <p> Subscribe to get updated on future game releases</p>
+                <div class="search-bar">
+                     <input type="mail" placeholder="Enter your email">
+                    <a href=""><i class="fa-solid fa-paper-plane"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-link">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+
+                <ul>
+                    <li><a href="#">games</a></li>
+                    <li><a href="#">about Us</a></li>
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+
+          <div class="social-link">
+            <p>Copyright © 2022 All rights reserved. Design by</p>
+
+            <ul class="social-icon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-play"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+            </ul>
+        </div>
+
+        </div>
+    </footer>
+
+    <div id="stop" class="scrollTop">
+        <span><a href=""><i class="fa-solid fa-angles-up"></i></a></span>
+      </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // swiper slider
+        var swiper = new Swiper( '.swiper-container.two', {
+            // navigation: true,	
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            effect: 'coverflow',
+            loop: true,
+            // autoplay: true,
+            speed: 1500,
+            centeredSlides: true,
+            slidesPerView: 'auto',        
+            coverflow: {
+                rotate: 0,
+                stretch: 3,
+                depth: 100,
+                modifier: 1.5,
+                slideShadows : false,
+            }
+        });
+        
+    </script>
+
+    <script>
+     $('.owl-carousel').owlCarousel({
+    autoplay:false,
+    loop:true,
+    margin:10,
+    nav:true,
+    dots: true,
+    autoplaySpeed: 600,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            dots: 5,
+            margin: 30,
+            items:4
+        }
+     }
+    });
+</script>
+
+
+
+
+</body>
+</html>
